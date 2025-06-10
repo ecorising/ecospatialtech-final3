@@ -1,5 +1,6 @@
 // pages/projects.tsx
 import Layout from '../components/Layout';
+
 export default function ProjectsPage() {
   const projects = [
     {
@@ -19,19 +20,21 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <main className="my-16 max-w-6xl mx-auto px-4">
-      <h2 className="text-2xl font-bold mb-10 text-center">Case Studies</h2>
-      <div className="space-y-16">
-        {projects.map((project, index) => (
-          <div key={index} className={`flex flex-col ${project.alignment === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'} items-center text-center md:text-left gap-6`}>
-            <img src={project.img} alt={project.alt} className="rounded-lg shadow-md max-w-sm max-h-48 w-full object-cover" />
-            <div className="max-w-lg">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p>{project.text}</p>
+    <Layout>
+      <main className="my-16 max-w-6xl mx-auto px-4 font-sans">
+        <h2 className="text-2xl font-bold mb-10 text-center">Case Studies</h2>
+        <div className="space-y-16">
+          {projects.map((project, index) => (
+            <div key={index} className={`flex flex-col ${project.alignment === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'} items-center text-center md:text-left gap-6`}>
+              <img src={project.img} alt={project.alt} className="rounded-lg shadow-md max-w-sm max-h-48 w-full object-cover" />
+              <div className="max-w-lg">
+                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <p>{project.text}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </main>
+          ))}
+        </div>
+      </main>
+    </Layout>
   );
 }
