@@ -19,10 +19,10 @@ export default function HomePage() {
         <nav className="max-w-6xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Eco Rising Solutions</h1>
           <div className="space-x-4">
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#services" className="hover:underline">Services</a>
-            <a href="#projects" className="hover:underline">Projects</a>
-            <a href="#contact" className="hover:underline">Contact</a>
+            <a href="#about      " className="hover:underline">About</a>
+            <a href="#services      " className="hover:underline">Services</a>
+            <a href="#projects      " className="hover:underline">Projects</a>
+            <a href="#contact      " className="hover:underline">Contact</a>
           </div>
         </nav>
       </header>
