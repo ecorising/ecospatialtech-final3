@@ -1,8 +1,8 @@
 "use client";
 
-import { Card, CardContent } from "../components/ui/card";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
 export default function HomePage() {
@@ -21,7 +21,7 @@ export default function HomePage() {
         <img
           src="/images/hero-drone-satellite.jpg"
           alt="Drone and satellite observing Earth"
-          className="mx-auto mt-6 rounded-lg shadow-md max-w-2xl"
+          className="mx-auto mt-6 rounded-lg shadow-md max-w-xl h-auto"
         />
       </header>
 
@@ -35,40 +35,40 @@ export default function HomePage() {
       <section className="grid md:grid-cols-2 gap-6 my-10" id="services">
         <Card>
           <CardContent>
-            <img src="/images/urban-climate.jpg" alt="Urban infrastructure monitoring" className="rounded mb-3" />
+            <img src="/images/urban-climate.jpg" alt="Urban infrastructure monitoring" className="rounded mb-3 max-h-40 w-full object-cover" />
             <h2 className="text-xl font-semibold mb-2">Urban Climate & Infrastructure</h2>
             <p>
-              We deliver high-resolution urban climate analysis and infrastructure monitoring using satellite and drone-based remote sensing. Our AI-enhanced digital twin technologies provide actionable insights for resilient city planning.
+              High-resolution urban climate analysis and infrastructure monitoring using satellite and drone-based remote sensing. Our AI-enhanced digital twin technologies provide actionable insights for resilient city planning, heat mitigation, and sustainable urban development.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent>
-            <img src="/images/water-quality.jpg" alt="Water analysis imagery" className="rounded mb-3" />
+            <img src="/images/water-quality.jpg" alt="Water analysis imagery" className="rounded mb-3 max-h-40 w-full object-cover" />
             <h2 className="text-xl font-semibold mb-2">Water Quantity & Quality Monitoring</h2>
             <p>
-              Eco Rising leverages remote sensing, field data, and AI models to track hydrological changes and water quality trends in lakes, rivers, and reservoirs.
+              We track hydrological changes and model harmful algal blooms (HABs) using remote sensing, field data, and AI. Our tools provide water agencies and researchers with vital insights for lake health, river flow analysis, and resource sustainability.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent>
-            <img src="/images/digital-twin.jpg" alt="Digital twin visual interface" className="rounded mb-3" />
+            <img src="/images/digital-twin.jpg" alt="Digital twin visual interface" className="rounded mb-3 max-h-40 w-full object-cover" />
             <h2 className="text-xl font-semibold mb-2">Digital Twin & AI Analytics</h2>
             <p>
-              Our digital twin platforms simulate environmental systems and infrastructure behavior, integrating multi-source satellite, drone, and sensor data.
+              Our digital twins simulate complex environmental and infrastructure systems. By fusing sensor, satellite, and drone data, we deliver predictive models and decision-making tools for smart infrastructure and environmental forecasting.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent>
-            <img src="/images/remote-sensing.jpg" alt="Drone and satellite image overlay" className="rounded mb-3" />
+            <img src="/images/remote-sensing.jpg" alt="Drone and satellite image overlay" className="rounded mb-3 max-h-40 w-full object-cover" />
             <h2 className="text-xl font-semibold mb-2">Remote Sensing Technologies</h2>
             <p>
-              We combine drone-based data collection and satellite imagery to deliver precision mapping and environmental intelligence for diverse applications.
+              We combine high-resolution drone imagery and multispectral satellite data for precision mapping, change detection, vegetation monitoring, and land-use planning. Our remote sensing services support research, policy, and community resilience.
             </p>
           </CardContent>
         </Card>
@@ -79,20 +79,20 @@ export default function HomePage() {
 
         <Card className="mb-6">
           <CardContent>
-            <img src="/images/subway-heat.jpg" alt="NYC Subway platform thermal analysis" className="rounded mb-3" />
+            <img src="/images/subway-heat.jpg" alt="NYC Subway platform thermal analysis" className="rounded mb-3 max-h-40 w-full object-cover" />
             <h3 className="text-xl font-semibold mb-2">Subway Heat Risk Forecasting in NYC</h3>
             <p>
-              Leveraging a combination of infrared imagery, in-situ air sensors, and AI forecasting models, Eco Rising developed a tool to predict platform-level heat risks across MTA subway stations. The system is designed to support ventilation management and commuter safety during extreme heat events.
+              Using a combination of infrared thermal imagery, handheld sensors, and AI forecasting models, Eco Rising developed a platform-level temperature risk prediction tool. The system assists the MTA in planning ventilation strategies during extreme heat events.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardContent>
-            <img src="/images/water-quality.jpg" alt="Lake and river water analysis" className="rounded mb-3" />
+            <img src="/images/water-quality.jpg" alt="Lake and river water analysis" className="rounded mb-3 max-h-40 w-full object-cover" />
             <h3 className="text-xl font-semibold mb-2">Water Quantity and Quality Monitoring</h3>
             <p>
-              Using MODIS and drone-based remote sensing, our team developed tools to assess water level variation and chlorophyll-a trends in key water bodies. These tools help stakeholders monitor resource availability and protect aquatic ecosystems.
+              MODIS and drone imagery were used to assess long-term water quantity trends and monitor chlorophyll-a levels to detect harmful algal blooms. These insights support water quality policy, climate adaptation, and regional water management.
             </p>
           </CardContent>
         </Card>
