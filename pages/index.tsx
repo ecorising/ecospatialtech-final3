@@ -1,7 +1,8 @@
-// pages/index.tsx
+import Layout from '../components/Layout';
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-800 font-sans">
+    <Layout>
       <section className="text-center py-12 bg-white">
         <h2 className="text-4xl font-bold mb-6">Geospatial, Environmental, and Climate Intelligence Solutions</h2>
         <img
@@ -10,6 +11,6 @@ export default function Home() {
           className="mx-auto rounded-lg shadow-md max-w-3xl max-h-96"
         />
       </section>
-    </main>
+    </Layout>
   );
 }
