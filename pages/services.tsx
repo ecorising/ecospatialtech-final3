@@ -1,5 +1,6 @@
 // pages/services.tsx
 import Layout from '../components/Layout';
+
 export default function ServicesPage() {
   const services = [
     {
@@ -33,19 +34,21 @@ export default function ServicesPage() {
   ];
 
   return (
-    <main className="my-12 max-w-6xl mx-auto px-4">
-      <h2 className="text-2xl font-bold mb-10 text-center">Our Services</h2>
-      <div className="space-y-16">
-        {services.map((service, index) => (
-          <div key={index} className={`flex flex-col ${service.alignment === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'} items-center text-center md:text-left gap-6`}>
-            <img src={service.img} alt={service.alt} className="rounded-lg shadow-md max-w-sm max-h-48 w-full object-cover" />
-            <div className="max-w-lg">
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p>{service.text}</p>
+    <Layout>
+      <main className="my-12 max-w-6xl mx-auto px-4 font-sans">
+        <h2 className="text-2xl font-bold mb-10 text-center">Our Services</h2>
+        <div className="space-y-16">
+          {services.map((service, index) => (
+            <div key={index} className={`flex flex-col ${service.alignment === 'left' ? 'md:flex-row' : 'md:flex-row-reverse'} items-center text-center md:text-left gap-6`}>
+              <img src={service.img} alt={service.alt} className="rounded-lg shadow-md max-w-sm max-h-48 w-full object-cover" />
+              <div className="max-w-lg">
+                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                <p>{service.text}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </main>
+          ))}
+        </div>
+      </main>
+    </Layout>
   );
 }
