@@ -1,4 +1,5 @@
 // pages/services.tsx
+import Layout from '../components/Layout';
 export default function ServicesPage() {
   const services = [
     {
