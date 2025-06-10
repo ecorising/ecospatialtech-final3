@@ -124,3 +124,4 @@ export default function HomePage() {
     </div>
   );
 }
+Update homepage with full content and sections
