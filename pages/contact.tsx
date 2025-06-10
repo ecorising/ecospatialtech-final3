@@ -1,4 +1,5 @@
 // pages/contact.tsx
+import Layout from '../components/Layout';
 export default function ContactPage() {
   return (
     <main className="bg-green-50 text-center py-12 px-4">
