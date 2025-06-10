@@ -1,4 +1,5 @@
 // pages/about.tsx
+import Layout from '../components/Layout';
 export default function AboutPage() {
   return (
     <main className="max-w-3xl mx-auto py-12 px-4 text-center">
